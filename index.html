@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shopping Cart</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <main>
+            <section class="bg-info main-section" style="height: 125vh;">
+                <div class="container overflow-hidden">
+                    <div class="row g-5 mb-4 mt-5" >
+                        <div class="col" id="for-phn">
+                            <div class="p-3 border bg-light rounded d-flex" >
+                            
+                                <div class="container">
+                                    <div class="row" >
+                                        <div class="col-6 col-sm-3">
+                                            <img src="product-1.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-6 col-sm-3 d-flex justify-content-center align-items-center">
+                                            iPhone 11 128GB Black
+                                        </div>
+
+                                        <div class="col-6 col-sm-3 d-flex flex-column justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-light" id="phn-btn-minus">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+
+                                            <div class="input-group">
+                                                
+                                                <input type="text" aria-label="First name" class="form-control text-center" value="0" id="phn-input">
+                                                
+                                            </div>
+
+                                            <button type="button" class="btn btn-light" id="phn-btn-plus">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+
+                                        </div>
+
+                                        <div class="col-6 col-sm-3 d-flex justify-content-center align-items-center">
+                                        
+                                            <p>$<span id="phn-price">0</span></p>
+
+                                            <button type="button" class="btn btn-light ms-5" id="delete-node-phn">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        </div>
+                        <div class="row g-5 mb-4">
+                        <div class="col" id="for-case">
+                            <div class="p-3 border bg-light rounded d-flex">
+                            
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-3">
+                                            <img src="product-2.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-6 col-sm-3 d-flex justify-content-center align-items-center">
+                                            iPhone 11 Silicone Case - Black
+                                        </div>
+                            
+                                        <div class="col-6 col-sm-3 d-flex flex-column justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-light" id="case-minus-btn">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                            
+                                            <div class="input-group" >
+                            
+                                                <input type="text" aria-label="First name" class="form-control text-center" id="case-input-info" value="0">
+                            
+                                            </div>
+                            
+                                            <button type="button" class="btn btn-light" id="case-plus-btn">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                            
+                                        </div>
+                            
+                                        <div class="col-6 col-sm-3 d-flex justify-content-center align-items-center">
+                            
+                                            <p>$<span id="case-price">0</span></p>
+                            
+                                            <button type="button" class="btn btn-light ms-5" id="case-remove-btn">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                            
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                        <div class="row g-5 ">
+                        <div class="col">
+                            <div class="p-3 border bg-light rounded">
+                                <div class="subtotal d-flex justify-content-between" id="subtotal">
+                                    
+                                    <p>Subtotal:</p>
+                                    <p style="position: relative; right: 13rem;">$<span id="subtotal-price">1259</span></p>
+
+                                </div>
+                                <div class="tax d-flex justify-content-between" id="tax">
+
+                                    <p>Tax:</p>
+                                    <p style="position: relative; right: 13rem;">$<span id="tax-price">125.9</span></p>
+
+                                </div>
+                                <div class="Total d-flex justify-content-between">
+
+                                    <p>Total:</p>
+                                    <p style="position: relative; right: 13rem;">$<span id="all-price">1234.5</span></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success mt-5 mb-5" style="float: right;">Check Out</button>
+
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
